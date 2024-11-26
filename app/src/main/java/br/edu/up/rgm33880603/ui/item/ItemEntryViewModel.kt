@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui.item
+package br.edu.up.rgm33880603.ui.item
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import com.example.inventory.data.Item
+import br.edu.up.rgm33880603.data.Item
 import java.text.NumberFormat
 
 /**
@@ -66,7 +66,7 @@ data class ItemDetails(
 )
 
 /**
- * Extension function to convert [ItemDetails] to [Item]. If the value of [ItemDetails.price] is
+ * Extension function to convert [br.edu.up.rgm33880603.ui.item.ItemDetails] to [Item]. If the value of [ItemDetails.price] is
  * not a valid [Double], then the price will be set to 0.0. Similarly if the value of
  * [ItemDetails.quantity] is not a valid [Int], then the quantity will be set to 0
  */
@@ -90,7 +90,7 @@ fun Item.toItemUiState(isEntryValid: Boolean = false): ItemUiState = ItemUiState
 )
 
 /**
- * Extension function to convert [Item] to [ItemDetails]
+ * Extension function to convert [Item] to [br.edu.up.rgm33880603.ui.item.ItemDetails]
  */
 fun Item.toItemDetails(): ItemDetails = ItemDetails(
     id = id,

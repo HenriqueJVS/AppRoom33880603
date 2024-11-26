@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui.home
+package br.edu.up.rgm33880603.ui.home
 
 import androidx.lifecycle.ViewModel
-import com.example.inventory.data.Item
+import br.edu.up.rgm33880603.data.Item
 
 /**
  * ViewModel to retrieve all items in the Room database.

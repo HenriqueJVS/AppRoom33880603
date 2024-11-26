@@ -16,7 +16,7 @@
 
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package com.example.inventory
+package br.edu.up.rgm33880603
 
 import androidx.compose.material.icons.Icons.Filled
 import androidx.compose.material.icons.filled.ArrowBack
@@ -32,7 +32,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.inventory.R.string
-import com.example.inventory.ui.navigation.InventoryNavHost
+import br.edu.up.rgm33880603.ui.navigation.InventoryNavHost
 
 /**
  * Top level composable that represents screens for the application.

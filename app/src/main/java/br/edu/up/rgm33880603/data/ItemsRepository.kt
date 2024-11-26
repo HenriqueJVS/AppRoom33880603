@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.example.inventory.data
+package br.edu.up.rgm33880603.data
 
 /**
- * Repository that provides insert, update, delete, and retrieve of [Item] from a given data source.
+ * Repository that provides insert, update, delete, and retrieve of [br.edu.up.rgm33880603.data.Item] from a given data source.
  */
 interface ItemsRepository
