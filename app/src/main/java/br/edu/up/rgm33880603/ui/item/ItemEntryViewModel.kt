@@ -28,6 +28,11 @@ import  br.edu.up.rgm33880603.data.ItemsRepository
  */
 class ItemEntryViewModel(private val itemsRepository: ItemsRepository) : ViewModel() {
 
+    suspend fun saveItem() {
+        if (validateInput()) {
+            itemsRepository.insertItem(itemUiState.itemDetails.toItem())
+        }
+    }
     /**
      * Holds current item ui state
      */
@@ -97,4 +102,5 @@ fun Item.toItemDetails(): ItemDetails = ItemDetails(
     name = name,
     price = price.toString(),
     quantity = quantity.toString()
+
 )
