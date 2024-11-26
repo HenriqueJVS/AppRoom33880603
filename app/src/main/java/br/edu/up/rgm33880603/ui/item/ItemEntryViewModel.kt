@@ -22,11 +22,11 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import br.edu.up.rgm33880603.data.Item
 import java.text.NumberFormat
-
+import  br.edu.up.rgm33880603.data.ItemsRepository
 /**
  * ViewModel to validate and insert items in the Room database.
  */
-class ItemEntryViewModel : ViewModel() {
+class ItemEntryViewModel(private val itemsRepository: ItemsRepository) : ViewModel() {
 
     /**
      * Holds current item ui state
